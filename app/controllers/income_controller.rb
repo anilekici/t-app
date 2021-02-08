@@ -8,6 +8,11 @@ class IncomeController < ApplicationController
   def create
     @income = Income.new(income_params)
     @income.save
+    if @income.save
+      redirect_to income_path(@income)
+    else
+      render 'new'
+    end
   end
 
   def show

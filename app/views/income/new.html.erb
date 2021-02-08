@@ -1,4 +1,4 @@
-<%= simple_form_for(@income) do |f| %>
+<%= simple_form_for(@income, url: income_path(self)) do |f| %>
   <%= f.input :frequency %>
   <%= f.input :hours %>
   <%= f.input :days %>
