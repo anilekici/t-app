@@ -1,3 +1,3 @@
 class Income < ApplicationRecord
-  validates :frequency
+  validates :frequency, :value, :hours, :days, presence: true
 end

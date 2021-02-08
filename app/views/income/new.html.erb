@@ -1,0 +1,8 @@
+<%= simple_form_for(@income, url: income_path(self)) do |f| %>
+  <%= f.input :frequency %>
+  <%= f.input :hours %>
+  <%= f.input :days %>
+  <%= f.input :value %>
+  <%= f.input :currency %>
+  <%= f.submit %>
+<% end %>
